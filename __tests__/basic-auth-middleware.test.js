@@ -25,7 +25,7 @@ const next = jest.fn();
 
 describe('user authentication', () => {
     it('fails a login for a user (admin) with the incorrect basic credentials', () => {
-        require.headers = {
+        req.headers = {
             authorization: 'Basic YWRtaW46Zm9v',
         };
 
